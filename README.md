@@ -29,20 +29,19 @@ The app allows users to:
 git clone https://github.com/your-username/my-converter-app.git
 cd my-converter-app
 
-2️⃣ Run the Backend (Express API)
+### 2️⃣ Run the Backend (Express API)
 cd Backend
 npm install
 npm run dev
 
 
-Runs at: http://localhost:3000
+- Runs at: http://localhost:3000
 
-Example request:
+- Example request:
 
 GET http://localhost:3000/api/convert?type=inchesToMeters&value=10
 
-
-Response:
+- Response:
 
 {
   "type": "inchesToMeters",
@@ -50,17 +49,16 @@ Response:
   "result": 0.254
 }
 
-3️⃣ Run the Frontend (React)
+### 3️⃣ Run the Frontend (React)
 cd Frontend
 npm install
 npm run dev
 
 
-Runs at: http://localhost:5173
+- Runs at: http://localhost:5173
+- The frontend communicates with the backend API.
 
-The frontend communicates with the backend API.
-
-4️⃣ Run Both Frontend + Backend Together
+### 4️⃣ Run Both Frontend + Backend Together
 
 At the project root (my-converter-app/), create a package.json (if you don’t already have one):
 
@@ -77,47 +75,37 @@ Then add this to root package.json:
 }
 
 
-Now you can run:
+### Now you can run:
 
 npm start
 
+### ✅ This will start both:
 
-✅ This will start both:
+- Backend → http://localhost:3000
+- Frontend → http://localhost:5173
 
-Backend → http://localhost:3000
+### ⚡ Features
 
-Frontend → http://localhost:5173
-
-⚡ Features
-
-Dropdown to select conversion type
-
-Input field for numeric values
-
-Fetches results from the backend
-
-Displays conversion results dynamically
+- Dropdown to select conversion type
+- Input field for numeric values
+- Fetches results from the backend
+- Displays conversion results dynamically
 
 Run both servers with one command
 
-🛠 Tech Stack
+### 🛠 Tech Stack
 
-Frontend: React (Vite)
+- Frontend: React (Vite)
+- Backend: Node.js, Express
+- Other: CORS, Nodemon, Concurrently
 
-Backend: Node.js, Express
+### 🔮 Future Improvements
 
-Other: CORS, Nodemon, Concurrently
+- Add more conversion types (length, weight, temperature, currency, etc.)
+- Add unit tests for backend
+- Styled UI with Tailwind or Material UI
+- Dockerize for easier deployment
 
-🔮 Future Improvements
+### 👨‍💻 Author
 
-Add more conversion types (length, weight, temperature, currency, etc.)
-
-Add unit tests for backend
-
-Styled UI with Tailwind or Material UI
-
-Dockerize for easier deployment
-
-👨‍💻 Author
-
-Developed by Winshelo ST LOUIS
+- Developed by Winshelo ST LOUIS
