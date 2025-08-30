@@ -28,23 +28,26 @@ The app allows users to:
 ```bash
 git clone https://github.com/your-username/my-converter-app.git
 cd my-converter-app
+```
 
----
 
 ### 2️⃣ Run the Backend (Express API)
+```bash
 cd Backend
 npm install
 npm run dev
-
+```
 
 - Runs at: http://localhost:3000
-
 - Example request:
 
+```bash
 GET http://localhost:3000/api/convert?type=inchesToMeters&value=10
+```
 
 - Response:
 
+```bash
 {
   "type": "inchesToMeters",
   "input": 10,
@@ -52,10 +55,11 @@ GET http://localhost:3000/api/convert?type=inchesToMeters&value=10
 }
 
 ### 3️⃣ Run the Frontend (React)
+```bash
 cd Frontend
 npm install
 npm run dev
-
+```
 
 - Runs at: http://localhost:5173
 - The frontend communicates with the backend API.
@@ -63,24 +67,24 @@ npm run dev
 ### 4️⃣ Run Both Frontend + Backend Together
 
 At the project root (my-converter-app/), create a package.json (if you don’t already have one):
-
+```bash
 npm init -y
 npm install concurrently --save-dev
-
+```
 
 Then add this to root package.json:
-
+```bash
 {
   "scripts": {
     "start": "concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\""
   }
 }
-
+```
 
 ### Now you can run:
-
+```bash
 npm start
-
+```
 ### ✅ This will start both:
 
 - Backend → http://localhost:3000
