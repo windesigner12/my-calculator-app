@@ -49,3 +49,75 @@ Response:
   "input": 10,
   "result": 0.254
 }
+
+3️⃣ Run the Frontend (React)
+cd Frontend
+npm install
+npm run dev
+
+
+Runs at: http://localhost:5173
+
+The frontend communicates with the backend API.
+
+4️⃣ Run Both Frontend + Backend Together
+
+At the project root (my-converter-app/), create a package.json (if you don’t already have one):
+
+npm init -y
+npm install concurrently --save-dev
+
+
+Then add this to root package.json:
+
+{
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\""
+  }
+}
+
+
+Now you can run:
+
+npm start
+
+
+✅ This will start both:
+
+Backend → http://localhost:3000
+
+Frontend → http://localhost:5173
+
+⚡ Features
+
+Dropdown to select conversion type
+
+Input field for numeric values
+
+Fetches results from the backend
+
+Displays conversion results dynamically
+
+Run both servers with one command
+
+🛠 Tech Stack
+
+Frontend: React (Vite)
+
+Backend: Node.js, Express
+
+Other: CORS, Nodemon, Concurrently
+
+🔮 Future Improvements
+
+Add more conversion types (length, weight, temperature, currency, etc.)
+
+Add unit tests for backend
+
+Styled UI with Tailwind or Material UI
+
+Dockerize for easier deployment
+
+👨‍💻 Author
+
+Developed by Winshelo ST LOUIS
