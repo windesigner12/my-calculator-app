@@ -15,33 +15,37 @@ The app allows users to:
 
 ## 📂 Project Structure
 
-my-converter-app/
-│
-├── Backend/ # Node.js + Express API
-│ ├── package.json
-│ ├── server.js # Main Express app
-│ ├── routes/
-│ │ └── convertRoutes.js # Conversion API endpoints
-│ ├── controllers/
-│ │ └── convertController.js # Conversion logic
-│ └── node_modules/
-│
-├── Frontend/ # React app (Vite)
-│ ├── package.json
-│ ├── vite.config.js
-│ ├── public/
-│ │ └── index.html
-│ └── src/
-│ ├── App.jsx # Main React component
-│ ├── main.jsx # Entry point
-│ ├── components/
-│ │ └── Converter.jsx # Dropdown + input + result
-│ └── assets/
-│
-└── package.json # Root scripts (for concurrently)
-└── README.md
-
 <img width="717" height="693" alt="Screenshot 2025-08-30 153938" src="https://github.com/user-attachments/assets/002f5f36-f26f-41a7-91fb-88560709a7f8" />
 
 
 
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/your-username/my-converter-app.git
+cd my-converter-app
+
+2️⃣ Run the Backend (Express API)
+cd Backend
+npm install
+npm run dev
+
+
+Runs at: http://localhost:3000
+
+Example request:
+
+GET http://localhost:3000/api/convert?type=inchesToMeters&value=10
+
+
+Response:
+
+{
+  "type": "inchesToMeters",
+  "input": 10,
+  "result": 0.254
+}
