@@ -29,6 +29,8 @@ The app allows users to:
 git clone https://github.com/your-username/my-converter-app.git
 cd my-converter-app
 
+---
+
 ### 2️⃣ Run the Backend (Express API)
 cd Backend
 npm install
