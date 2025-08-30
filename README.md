@@ -115,4 +115,4 @@ Run both servers with one command
 
 ### 👨‍💻 Author
 
-- Developed by Winshelo ST LOUIS
+- Developed by <a href="https://www.youtube.com/@winshelost-louis4593" target="_blank">Winshelo ST LOUIS</a>
