@@ -40,3 +40,8 @@ my-converter-app/
 │
 └── package.json # Root scripts (for concurrently)
 └── README.md
+
+<img width="717" height="693" alt="Screenshot 2025-08-30 153938" src="https://github.com/user-attachments/assets/002f5f36-f26f-41a7-91fb-88560709a7f8" />
+
+
+
