@@ -53,7 +53,7 @@ GET http://localhost:3000/api/convert?type=inchesToMeters&value=10
   "input": 10,
   "result": 0.254
 }
-
+```
 ### 3️⃣ Run the Frontend (React)
 ```bash
 cd Frontend
@@ -67,6 +67,7 @@ npm run dev
 ### 4️⃣ Run Both Frontend + Backend Together
 
 At the project root (my-converter-app/), create a package.json (if you don’t already have one):
+
 ```bash
 npm init -y
 npm install concurrently --save-dev
